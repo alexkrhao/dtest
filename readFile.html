@@ -50,8 +50,7 @@ body {
 <body>
 
 <div id="demo-container">
-	<label for="file-input" id="file-input-label">Choose Text File</label>
-	<input type="file" id="file-input" accept="text/plain" />
+	<label for="file-input" id="file-input-label">File</label>
 	<div id="file-progress-container"><span id="file-progress-percent"></span>% read</div>
 	<div id="contents"></div>
 </div>
@@ -71,7 +70,8 @@ xmlhttp.onreadystatechange = function(){
 	    document.querySelector("#file-input-label").style.display = 'block'; 
   }
 };
-xmlhttp.open("GET","file:///android_asset/hongbao.properties",true);
+//xmlhttp.open("GET","file:///android_asset/hongbao.properties",true);
+xmlhttp.open("GET","https://guqi.at",true);
 xmlhttp.send();
 
 });
