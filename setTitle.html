@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<style type="text/css">
+
+body {
+	margin: 0;
+}
+
+#demo-container {
+	text-align: center;
+	margin: 40px auto;
+}
+
+#file-input-label {
+	width: 200px;
+	cursor: pointer;
+	background-color: #336699;
+	color: white;
+	padding: 10px;
+	display: block;
+	margin: 0 auto;
+}
+
+#file-input {
+	display: none;
+}
+
+#file-progress-container {
+	display: none;
+	margin: 15px 0 0 0;
+}
+
+#contents {
+	margin: 15px 0 0 0;
+	display: none;
+	text-align: left;
+	background-color: rgba(0,0,0,0.1);
+	padding: 10px;
+	font-size: 13px;
+	max-height: 300px;
+	overflow: auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="demo-container">
+	<p>Set Title</p>
+</div>
+
+<script type="text/javascript">
+
+document.addEventListener("DOMContentLoaded", function(event) {
+
+                FeedbackDetailJs.setTitle("test title1");
+				OmgJSBridge.setTitle("test title2");
+				DidiJSBridge.setTitle("test title3");
+});
+
+</script>
+
+</body>
+</html>
